@@ -11,6 +11,12 @@
 		75291E5A27BD908E003A3D5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75291E5927BD908E003A3D5B /* ContentView.swift */; };
 		75291E5C27BD908F003A3D5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75291E5B27BD908F003A3D5B /* Assets.xcassets */; };
 		75291E5F27BD908F003A3D5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75291E5E27BD908F003A3D5B /* Preview Assets.xcassets */; };
+		75291E6627BD91CD003A3D5B /* MoviesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75291E6527BD91CD003A3D5B /* MoviesList.swift */; };
+		75291E6827BD9241003A3D5B /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75291E6727BD9241003A3D5B /* MovieDetail.swift */; };
+		75291E6A27BD95B5003A3D5B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75291E6927BD95B5003A3D5B /* Models.swift */; };
+		75291E6C27BD9F94003A3D5B /* AddMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75291E6B27BD9F94003A3D5B /* AddMovie.swift */; };
+		75291E6E27BDABDA003A3D5B /* Profil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75291E6D27BDABDA003A3D5B /* Profil.swift */; };
+		75BA8B9E27E9D46C0068CD8D /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BA8B9D27E9D46C0068CD8D /* Database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		75291E5927BD908E003A3D5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		75291E5B27BD908F003A3D5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75291E5E27BD908F003A3D5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		75291E6527BD91CD003A3D5B /* MoviesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesList.swift; sourceTree = "<group>"; };
+		75291E6727BD9241003A3D5B /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		75291E6927BD95B5003A3D5B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		75291E6B27BD9F94003A3D5B /* AddMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovie.swift; sourceTree = "<group>"; };
+		75291E6D27BDABDA003A3D5B /* Profil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profil.swift; sourceTree = "<group>"; };
+		75BA8B9D27E9D46C0068CD8D /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		75E2EEB727F4386E00A97381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7505E73828DB57050093B58A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				75291E6927BD95B5003A3D5B /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		75291E4B27BD908E003A3D5B = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +72,13 @@
 		75291E5627BD908E003A3D5B /* MoviesProject */ = {
 			isa = PBXGroup;
 			children = (
+				75E2EEB727F4386E00A97381 /* Info.plist */,
 				75291E5727BD908E003A3D5B /* MoviesProjectApp.swift */,
 				75291E5927BD908E003A3D5B /* ContentView.swift */,
+				7505E73828DB57050093B58A /* Models */,
+				75291E6F27BDBC16003A3D5B /* Screens */,
+				75BA8B9F27E9D5600068CD8D /* ExtractedViews */,
+				75291E7027BDBC3C003A3D5B /* Data */,
 				75291E5B27BD908F003A3D5B /* Assets.xcassets */,
 				75291E5D27BD908F003A3D5B /* Preview Content */,
 			);
@@ -65,6 +91,32 @@
 				75291E5E27BD908F003A3D5B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		75291E6F27BDBC16003A3D5B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				75291E6527BD91CD003A3D5B /* MoviesList.swift */,
+				75291E6727BD9241003A3D5B /* MovieDetail.swift */,
+				75291E6B27BD9F94003A3D5B /* AddMovie.swift */,
+				75291E6D27BDABDA003A3D5B /* Profil.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		75291E7027BDBC3C003A3D5B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				75BA8B9D27E9D46C0068CD8D /* Database.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		75BA8B9F27E9D5600068CD8D /* ExtractedViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExtractedViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75291E6E27BDABDA003A3D5B /* Profil.swift in Sources */,
+				75291E6A27BD95B5003A3D5B /* Models.swift in Sources */,
 				75291E5A27BD908E003A3D5B /* ContentView.swift in Sources */,
 				75291E5827BD908E003A3D5B /* MoviesProjectApp.swift in Sources */,
+				75291E6627BD91CD003A3D5B /* MoviesList.swift in Sources */,
+				75291E6C27BD9F94003A3D5B /* AddMovie.swift in Sources */,
+				75BA8B9E27E9D46C0068CD8D /* Database.swift in Sources */,
+				75291E6827BD9241003A3D5B /* MovieDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,11 +330,13 @@
 				DEVELOPMENT_TEAM = 57WR64CG7N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoviesProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +361,13 @@
 				DEVELOPMENT_TEAM = 57WR64CG7N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoviesProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
